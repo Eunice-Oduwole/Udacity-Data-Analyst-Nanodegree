@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[scale=0.75,a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{babel}
+\usepackage{graphicx}
+
+
+
+
+\author{Oduwole Eunice}
+\title{ Tweet archive of  WeRateDogs}
+\begin{document}
+\maketitle
+\noindent For this project we were interested in wrangling  the tweet archive of Twitter user WeRateDogs. This archive contains basic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017.
+
+
+\section*{Data Extraction}
+\noindent Three pieces of data was required for the analysis:
+\begin{list}{}{}
+\item[1.] twitter archive .csv which was provided in the course resourses
+\item[2.]image predictions.tsv which was downloaded using request library and anmd the given url 
+\item[3.]tweet json.txt was downloaded using tweet IDs in the WeRateDogs Twitter archive, query the Twitter API for each tweet's JSON data using python's Tweepy library 
+\end{list}
+
+
+\section*{Assessing data}
+In order to ensure the data to the data was viewed both visually from excel sheet and programmatically using various pandas function. Based this accessment, the following was found:
+\subsection*{ Quality}
+\begin{itemize}
+\item  'Al Cabone' written as 'Al' in the name column
+\item 'Zoey' written as 'my'
+\item 'O'Malley' wriiten as O
+\item There are mistakes in the name column such as 'a', 'getting', 'this', 'all' etc.
+\item Remove coulmns that are not needed for analysis such as the retweets and the in reply to status id
+\item The rating denominator column has entries greater than 10 (which is the standard for all the dogs)
+\item Floating number not capture in  rating numerator column 
+\item  Erroneous datatypes (tweet id) in both `twitter archive` and `image predictions` tables
+\item  Erroneous datatypes (timestamp)
+\item Underscore in the entry for  P1, P2 and P3 in the `image predictions` table
+\end{itemize}
+
+
+\subsection*{ Tidiness}
+\begin{itemize}
+\item The dog stage (doggo, floofer, pupper, puppo) should be combined into a single column 
+\item The Favorite count and retweet count should be part of twitterarchive table.
+\end{itemize}
+
+
+\section*{Cleaning data}
+\begin{itemize}
+\item Favorite count and retweet count was cut  into another dataframe then join it to the twitter archive using what they have in common(twitter id) .
+\item Each dog was extracted  from the text column into a new column. Then drop the columns doggo,floofer,pupper,puppo
+\item Replace rows that has names mistaken with the correct name 
+\item Extract the floating number from the text column and then replace the affected columns with the right number
+\item Locate the names using the lowercase and replace them with nan (also replace the existing 'None' in the coulmn with nan such that we are consitent
+\item Remove the +0000 from the timestamp column and then convert it from string to datetime format
+\item Ratings denominator was corrected 
+\end{itemize}
+
+
+
+
+\end{document}
