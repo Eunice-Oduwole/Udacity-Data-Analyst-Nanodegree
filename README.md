@@ -13,3 +13,11 @@ In this project, my task is to investigate the dataset and posed questions that 
 ## Project 2: Analyze Experiment Results
 In this project, I worked on the result of an A/B test run by an e-commerce website, cleaned the data and applied statistical techniques (such as probability, hypothesis testing, regression approach etc.) 
 to answer question about the data. THe result from this statistical technique would give an insight to understand if the company should implement a newly lunched web page, keep the existing page or run the experiment for a longer time to make their decision.
+
+
+## Project 3: Wrangle and Analyze Data (WeRateDogs)
+Using Python and its libraries, I gathered data for WeRateDogs Twitter archive from a variety of sources and in a variety of formats. Query the Twitter  API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file called tweet_json.txt file. Thereafter, assessed its quality and tidiness, then clean it and produced visualization to gain insight from the dataset. 
+
+
+## Project 4: Communicate Data Findings (Fordgobike)
+For this project, I downloaded the Bay Wheels's trip data from their [website](https://www.lyft.com/bikes/bay-wheels/system-data) cleaned the data and used Python's data visualization tools to systematically explore the dataset for its properties and relationships between variables.Then, a created a slide deck to communicate the findings. 
