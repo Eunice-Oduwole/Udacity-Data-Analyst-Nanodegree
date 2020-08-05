@@ -21,3 +21,6 @@ Using Python and its libraries, I gathered data for WeRateDogs Twitter archive f
 
 ## Project 4: Communicate Data Findings (Fordgobike)
 For this project, I downloaded the Bay Wheels's trip data from their [website](https://www.lyft.com/bikes/bay-wheels/system-data) cleaned the data and used Python's data visualization tools to systematically explore the dataset for its properties and relationships between variables.Then, a created a slide deck to communicate the findings. 
+
+
+Here is a link to a detailed content of the [course syllabus](https://video.udacity-data.com/topher/2018/September/5ba147ee_dand-syllabus-v10-fall-2018/dand-syllabus-v10-fall-2018.pdf).
