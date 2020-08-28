@@ -11,8 +11,14 @@ The dataset to be wrangle is the tweet archive of the user WeRateDogs. WeRateDog
 
 The archive provided to Udacity by WeRateDogs containsbasic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017 but retweet count and favorite count are two of the notable column omitted.
 
+
+## Enhanced Twitter Archive
+To enhance the archive provided by WeRateDogs, udacity has used the tweet's text column to extract rating, dog name, and dog "stage" (i.e. doggo, floofer, pupper, and puppo) of the 5000+ tweets and have filtered for tweets with ratings only (there are 2356). 
+
+Also, Udacity ran every image in the WeRateDogs Twitter archive through a neural network that can classify breeds of dogs*. The results: a table full of image predictions (the top three only) alongside each tweet ID, image URL, and the image number that corresponded to the most confident prediction (numbered 1 to 4 since tweets can have up to four images). 
+
 ## Wrangle Process
-In other to gather the ommitted data, I will be using Tweepy to query Twitter's API for additional data beyond the data included in the WeRateDogs Twitter archive. This additional data will include retweet count and favorite count.
+In other to gather the ommitted data, I will be using Tweepy to query Twitter's API for additional data beyond the data included in the WeRateDogs Twitter archive. This additional data will include retweet count and favorite count. 
 
 
 
