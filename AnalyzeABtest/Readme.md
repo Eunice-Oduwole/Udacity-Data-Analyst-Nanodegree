@@ -19,6 +19,7 @@ The dataset contains 294478 entries with 5 columns;
 ## Hypothesis
 
 **H_0: p_(old) >  p_(new)**
+
 **H_1: p_(old) < p_(new)**
 
 
