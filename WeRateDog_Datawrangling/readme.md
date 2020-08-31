@@ -25,6 +25,8 @@ In other to gather the retweet and favorite count ommitted data, I will be using
 ## Summary of findings
 
 The result of this analyses shows that rating and the favorite counts are not correlated. So we can say they are independent of each other. 
+
+There appears to be a positive correlation between the favorite count and retweets count. Suggesting that the dog stages likes by users will most often time get retweeted by people.  
  
 It was seen that the dog stage Pupper had the highest favorite count, followed by Doggo and Puppo with Floofer having the least likes. 
 
