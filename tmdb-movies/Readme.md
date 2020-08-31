@@ -1,4 +1,4 @@
-# Ford GoBike Data Exploration
+# TMDB-movies
 ## by Eunice Oduwole
 
 ## Dataset
@@ -17,14 +17,9 @@ I found the distribution of the hour of day is roughly bimodal, with the first p
 
 
 
+
+
 ## Key Insights for Presentation
 For the presentation I focused more on the impact of day of the week, hour of the day and user type on trip duration. 
 
 I started by showing the distribtions of all variables of interest. Then I showed the plot of intercation user type versus trip duration, trip duration versus day of the week. I also introduced a plot for Trip duration and hour by days of the week, and Trip duration and hours of the day by users. The last two graph were added to further emphasis on the finding. 
-
-
-
-
-
-
-
