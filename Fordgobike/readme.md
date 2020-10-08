@@ -3,7 +3,7 @@
 
 ## Dataset
 
-This document examines 192082 dataset containing information about individual  rides made in a bike-sharing system covering the greater San Francisco Bay area. The attribute included four feature, with other attribute such as bike_share_for_all_trip, start_station_name, start station id. Two more features were added such that we have entries for time in term of day and time (extracted from the start time column).  Dataset can be found [here](https://www.lyft.com/bikes/bay-wheels/system-data)
+This document examines 192082 dataset containing information about individual  rides made in a bike-sharing system covering the greater San Francisco Bay area. The attribute included four feature, with other attribute such as bike_share_for_all_trip, start_station_name, start station ID Two more features were added such that we have entries for time in term of day and time (extracted from the start time column).  Dataset can be found [here](https://www.lyft.com/bikes/bay-wheels/system-data)
 
 ## Wrangle Process
 I added two more features were added such that we have entries for time in term of day and time (extracted from the start time column). And changed the days of the week column into a ordinal categorical datatype,  user type and bike share for all was changed into a nominal categorical data, startime and endtime was also chnage to datetime and bike id was changed into strings. 
